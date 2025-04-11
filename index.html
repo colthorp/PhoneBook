@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacts</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Contacts</h1>
+        <div class="content">
+            <div class="form-container">
+                <h2>Add Contact</h2>
+                <form id="contact-form">
+                    <input type="text" id="name" placeholder="Name" required>
+                    <input type="text" id="phone" placeholder="Phone Number" required>
+                    <input type="email" id="email" placeholder="Email" required>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+
+
+          <!--Contact List-->
+        <div class="contacts-container">
+            <h2>Contact List</h2>
+
+            <input type="text" id="search" placeholder="Search Contact">
+          <!--Table-->     
+            <div class="table container">
+                <table id="contacts-table">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+            </div>
+        </div>    
+    </div>
+</div>
+
+<script type="module" src="PhoneBook.js"></script>
+</body>
+</html>
